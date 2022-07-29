@@ -25,6 +25,8 @@ public class MyNodeTest {
 		myLinkedList.search(56);
 		myLinkedList.searchInsert(mySecondNode,myfifthNode);
 		myLinkedList.PrintMyNodes();
+		myLinkedList.delete(myforthNode);
+		myLinkedList.PrintMyNodes();
 		
 		
 

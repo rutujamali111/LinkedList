@@ -112,6 +112,23 @@ public class MyLinkedList {
 			append(newNode);
 		
 	}
+	public void delete(INode myNode)
+	{
+		INode temp=this.head;
+		INode denode;
+		while(temp.getNext()!=null)
+		{
+			if(temp.getNext()==myNode)
+			{
+				denode=temp.getNext();
+				temp.setNext(denode.getNext());
+				break;
+			}
+			temp=temp.getNext();
+			
+		}
+		
+	}
 	
 
 }
