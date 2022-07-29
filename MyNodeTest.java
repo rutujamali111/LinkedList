@@ -9,6 +9,11 @@ public class MyNodeTest {
 		System.out.println(myFirstNode.getKey());
 		System.out.println(mySecondNode.getKey());
 		System.out.println(myThirdNode.getKey());
+		MyLinkedList myLinkedList=new MyLinkedList();
+		myLinkedList.add(myFirstNode);
+		myLinkedList.add(mySecondNode);
+		myLinkedList.add(myThirdNode);
+		myLinkedList.PrintMyNodes();
 		
 
 	}
