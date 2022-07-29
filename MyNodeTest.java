@@ -22,6 +22,7 @@ public class MyNodeTest {
 		System.out.println("Deleted last node  "+myLinkedList.popLast().getKey());
 		
 		myLinkedList.PrintMyNodes();
+		myLinkedList.search(56);
 		
 		
 		

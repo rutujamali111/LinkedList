@@ -78,4 +78,24 @@ public class MyLinkedList {
 		
 	}
 
+	public void search(int i) {
+		MyNode<Integer> Node=new MyNode<>(i);
+		INode tempNode=this.head;
+		int index=1;
+		while(tempNode.getNext()!=null)
+		{
+			if(tempNode.getKey()==Node.getKey())
+			{
+				System.out.println("Node found at position: "+index);
+				break;
+			}
+			tempNode=tempNode.getNext();
+			index++;
+		}
+		if(tempNode.getNext()==null)
+			System.out.println("node does not exist.");
+		
+	}
+	
+
 }
