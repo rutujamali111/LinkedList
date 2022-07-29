@@ -17,6 +17,9 @@ public class MyNodeTest {
 		myLinkedList.PrintMyNodes();
 		myLinkedList.insert(myFirstNode,myforthNode);
 		myLinkedList.PrintMyNodes();
+		INode popup=myLinkedList.pop();
+		System.out.println(popup.getKey());
+		myLinkedList.PrintMyNodes();
 		
 		
 

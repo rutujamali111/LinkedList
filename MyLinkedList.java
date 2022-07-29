@@ -58,5 +58,11 @@ public class MyLinkedList {
 		myNodes.append(tempNode.getKey());
 		System.out.println(myNodes);
 	}
+	public INode pop()
+	{
+		INode tempNode=this.head;
+		this.head=head.getNext();
+		return tempNode;
+	}
 
 }
