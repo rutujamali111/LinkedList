@@ -96,6 +96,22 @@ public class MyLinkedList {
 			System.out.println("node does not exist.");
 		
 	}
+	public void searchInsert(INode myNode,INode newNode)
+	{
+		INode temp=this.head;
+		while(temp.getNext()!=null)
+		{
+			if(temp==myNode)
+			{
+				insert(temp, newNode);
+				break;
+			}
+			temp=temp.getNext();
+		}
+		if(temp.getNext()==null)
+			append(newNode);
+		
+	}
 	
 
 }

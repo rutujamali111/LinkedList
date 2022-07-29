@@ -23,7 +23,8 @@ public class MyNodeTest {
 		
 		myLinkedList.PrintMyNodes();
 		myLinkedList.search(56);
-		
+		myLinkedList.searchInsert(mySecondNode,myfifthNode);
+		myLinkedList.PrintMyNodes();
 		
 		
 
